@@ -66,12 +66,12 @@ Static and Dynamic Analysis can be inhibited by obfuscating a program's executab
 
 ## Advanced Usage
 
-The transforms exposed in Phantom V are all simply abstractions of those functionalities imported from projects I've published separately, since they're all useful as standalone libraries:
+The transforms exposed in Phantom V are all simply abstractions of those functionalities imported from projects published separately, since they're all useful as standalone libraries:
 
-- `phantom.transforms.obfuscate` : Mutant, https://github.com/jt0dd/mutant
-- `phantom.transforms.unhook` : Introvert, https://github.com/jt0dd/introvert
-- `phantom.transforms.evade` : Metal Detector, https://github.com/jt0dd/metal-detector
-- `phantom.transforms.masquerade` : Masqueteer, https://github.com/jt0dd/masqueteer
+- `phantom.transforms.obfuscate` : Mutant, https://github.com/jt0dd/mutant (incomplete)
+- `phantom.transforms.unhook` : Introvert, https://github.com/jt0dd/introvert (incomplete)
+- `phantom.transforms.evade` : Metal Detector, https://github.com/jt0dd/metal-detector (incomplete)
+- `phantom.transforms.masquerade` : Masqueteer, https://github.com/jt0dd/masqueteer (incomplete)
 
 ### Obfuscate
 
@@ -80,3 +80,5 @@ The transforms exposed in Phantom V are all simply abstractions of those functio
 ### Evade
 
 ### Masquerade
+
+*This is a rough-draft outline of the project described. Nothing is complete*
