@@ -83,4 +83,4 @@ The transforms exposed in Phantom V are all simply abstractions of those functio
 
 ## Note
 
-*This is a rough-draft outline of the project described. Nothing is complete*
+*This is a rough-draft outline of the project described. Nothing is complete.*
