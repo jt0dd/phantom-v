@@ -39,6 +39,10 @@ Many traits of an executable file can be useful data sources toward the goal of 
 
 By performing Static and/or Dynamic Analysis of the processes typically operating on a host or group of hosts within an organization, a baseline of normal activity can be recorded. Data clustering can then be leveraged to allow human or automated analysis to notice, investigate, and react to outliers. 
 
+#### **(Defense) Packet Analysis:**
+
+If a program reaches out to a remote asset to load code dynamically, that code might be susceptible to interception via a proxy server on the internal network which may middle-man encrypted connections such as HTTPS in order to analyze packets.
+
 ## Transformations
 
 Phantom V either facilitates the combination of four separate transformations: Unhooking, Evasion, Obfuscation, and Masquerading.
@@ -63,6 +67,12 @@ In order to mitigate Static Analysis, it is common practice to make the metadata
 **Mitigates: \[** [_Static Analysis_](https://github.com/jt0dd/phantom-v/blob/main/README.md#defense-static-analysis), [_Dynamic Analysis_](https://github.com/jt0dd/phantom-v/blob/main/README.md#defense-dynamic-analysis) **\]**
 
 Static and Dynamic Analysis can be inhibited by obfuscating a program's executable data both at rest and at run-time. Obfuscation is, put simply, a way of achieving the same outcome through a different state sequence. Simply encrypting the contents of a program is not a sufficiently effective approach to mitigating Dynamic Analysis. At run-time, those contents must be decrypted for execution and either through emulation or memory inspection they can be analyzed effectively. As a result, it is critical that obfuscation be achieved during every time-slice along the path of execution. If even a single byte-sequence in memory can be matched to a uniquely malicious sequence or heuristically similar sequence, the program can be flagged as suspicious and investigated.
+
+#### **(Counter-Defense) Encoding:** 
+
+**Mitigates: \[** [_Packet Analysis_](https://github.com/jt0dd/phantom-v/blob/main/README.md#defense-packet-analysis), [_Static Analysis_](https://github.com/jt0dd/phantom-v/blob/main/README.md#defense-static-analysis) **\]**
+
+Techniques such as steganography wherein data is encoded into a format benign in appearance allow an attacker to avoid alerting network and endpoint threat detection systems. Even if an attacker cannot identify the contents of some data as specifically malicious (for example, encryption), that in itself may serve as an alertable characteristic. This is why Encoding can serve as a particularly effective means through which to transmit malicious data into (or out of) a network.
 
 ## Advanced Usage
 
