@@ -1,6 +1,6 @@
 ## Phantom V
 
-Phantom V demonstrates powerful transformations available to attackers to avoid hooks, evade analysis, and masquerade as a benign binary. Phantom V is an offensive Portable Executable re-packaging tool in the form of a Python library. When an attack involves executing a Portable Executable file remotely on a target host, the transformations demonstrated through the use of this library demonstrate the potential for malware to evade detection by endpoint security products and sensors.
+Phantom V demonstrates five powerful transformations available to attackers to avoid hooks, evade analysis, and masquerade as a benign binary. Phantom V is an offensive Portable Executable re-packaging tool in the form of a Python library. When an attack involves executing a Portable Executable file remotely on a target host, the transformations demonstrated through the use of this library demonstrate the potential for malware to evade detection by endpoint security products and sensors.
 
 ## Usage
 
@@ -12,6 +12,7 @@ tPE = phantom.PE('calc.exe') # target PE | Benign decoy.
 
 sPE.transforms.unhook()
 sPE.transforms.obfuscate()
+sPE.transforms.encode()
 sPE.transforms.evade()
 sPE.transforms.masquerade(tPE)
 sPE.exports.PE('evil_calc.exe')
@@ -76,9 +77,10 @@ Techniques such as steganography wherein data is encoded into a format benign in
 
 ## Advanced Usage
 
-The transforms exposed in Phantom V are all simply abstractions of those functionalities imported from projects published separately, since they're all useful as standalone libraries:
+The five transformations exposed in Phantom V are all simply abstractions of those functionalities imported from projects published separately, since they're all useful as standalone libraries:
 
 - `phantom.transforms.obfuscate` : Mutant, https://github.com/jt0dd/mutant (incomplete)
+- `phantom.transforms.encode` : Picasso, https://github.com/jt0dd/picasso (incomplete)
 - `phantom.transforms.unhook` : Introvert, https://github.com/jt0dd/introvert (incomplete)
 - `phantom.transforms.evade` : Metal Detector, https://github.com/jt0dd/metal-detector (incomplete)
 - `phantom.transforms.masquerade` : Masqueteer, https://github.com/jt0dd/masqueteer (incomplete)
