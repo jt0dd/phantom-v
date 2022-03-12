@@ -81,6 +81,6 @@ The transforms exposed in Phantom V are all simply abstractions of those functio
 
 ### Masquerade
 
-### Note
+## Note
 
 *This is a rough-draft outline of the project described. Nothing is complete*
