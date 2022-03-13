@@ -46,7 +46,7 @@ If a program reaches out to a remote asset to load code dynamically, that code m
 
 ## Transformations
 
-Phantom V either facilitates the combination of four separate transformations: Unhooking, Evasion, Obfuscation, and Masquerading.
+Phantom V facilitates the combination of five separate transformations: Unhooking, Evasion, Obfuscation, Encoding, and Masquerading.
 
 #### **(Counter-Defense) Unhooking:** 
 **Mitigates: \[** [_Hooking_](https://github.com/jt0dd/phantom-v/blob/main/README.md#defense-hooking) **\]**
